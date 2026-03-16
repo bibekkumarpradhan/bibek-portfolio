@@ -1,6 +1,6 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import ProjectCard from "../components/ProjectCard";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import ProjectCard from "@/components/ui/ProjectCard";
 
 export default function Projects() {
   return (
