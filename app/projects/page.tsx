@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ProjectCard from "@/components/ui/ProjectCard";
+import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
@@ -15,17 +16,15 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 gap-8">
 
-          <ProjectCard
-            title="Electronics Shopping Database"
-            description="Python application interacting with SQL database for product management."
-            link="https://github.com/bibekkumarpradhan"
-          />
-
-          <ProjectCard
-            title="Student Management System"
-            description="Database project for managing students and courses."
-            link="https://github.com/bibekkumarpradhan"
-          />
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              image={project.image}
+            />
+          ))}
 
         </div>
 
