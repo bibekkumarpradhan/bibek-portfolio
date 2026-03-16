@@ -13,9 +13,9 @@ export default function Home() {
       <main className="max-w-6xl mx-auto px-6 space-y-20">
 
         {/* HERO */}
-        <section className="text-center py-32 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white rounded-3xl mt-10">
+        <section className="text-center py-20 md:py-32 px-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white rounded-3xl mt-10">
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Hi, I'm Bibek Kumar Pradhan 👋
           </h1>
 
@@ -24,7 +24,7 @@ export default function Home() {
             modern web applications using React, Next.js, Python, and SQL.
           </p>
 
-          <div className="flex justify-center gap-4 mt-8 flex-wrap">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8 flex-wrap">
             <a
               href="/projects"
               className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"

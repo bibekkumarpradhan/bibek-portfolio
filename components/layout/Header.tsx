@@ -1,34 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import DarkModeToggle from "@/components/ui/DarkModeToggle";
+import DarkModeToggle from "../ui/DarkModeToggle";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b dark:border-gray-800 z-50">
+    <header className="w-full border-b bg-white dark:bg-black">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
 
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-
-        {/* Logo */}
-        <Link href="/" className="font-bold text-lg">
-          Bibek Kumar Pradhan
+        <Link href="/" className="text-xl font-bold">
+          Bibek Portfolio
         </Link>
 
-        {/* Navigation */}
-        <nav className="flex items-center gap-6">
-
-          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
-          <Link href="/about" className="hover:text-blue-600 transition">About</Link>
-          <Link href="/projects" className="hover:text-blue-600 transition">Projects</Link>
-          <Link href="/contact" className="hover:text-blue-600 transition">Contact</Link>
-
-          {/* Dark Mode */}
-          <DarkModeToggle />
-
+        <nav className="flex gap-6 text-sm md:text-base">
+          <Link href="/">Home</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
 
-      </div>
+        <DarkModeToggle />
 
+      </div>
     </header>
   );
 }

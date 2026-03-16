@@ -13,13 +13,19 @@ export default function GithubGraph() {
   if (!mounted) return null;
 
   return (
-    <div className="flex justify-center overflow-x-auto">
-      <GitHubCalendar
-        username="bibekkumarpradhan"
-        blockSize={15}
-        blockMargin={5}
-        fontSize={14}
-      />
+    <div className="w-full overflow-x-auto flex justify-center px-2">
+
+      <div className="min-w-[700px] md:min-w-0">
+
+        <GitHubCalendar
+          username="bibekkumarpradhan"
+          blockSize={12}
+          blockMargin={4}
+          fontSize={12}
+        />
+
+      </div>
+
     </div>
   );
 }
