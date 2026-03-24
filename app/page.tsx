@@ -96,7 +96,9 @@ export default function Home() {
                 title={project.title}
                 description={project.description}
                 link={project.link}
+                github={project.github}
                 image={project.image}
+                tech={project.tech}
               />
             ))}
           </div>

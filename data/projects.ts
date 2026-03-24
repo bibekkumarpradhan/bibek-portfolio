@@ -1,16 +1,11 @@
 export const projects = [
   {
-    title: "Electronics Shopping Database",
+    title: "Whiskly — Recipe Finder",
     description:
-      "A Python & SQL based database system for managing an electronics store.",
-    link: "https://github.com/bibekkumarpradhan",
-    image: "/images/projects/electronics-db.png",
-  },
-  {
-    title: "Student Management System",
-    description:
-      "A database application for managing students, courses and grades.",
-    link: "https://github.com/bibekkumarpradhan",
-    image: "/images/projects/student-system.png",
+      "Full-stack recipe platform built with Node.js, Express, and SQLite featuring authentication, image uploads, comments, favorites, and user profiles.",
+    link: "https://whiskly.bibekpradhan.dev",
+    github: "https://github.com/bibekkumarpradhan/whiskly-recipe-finder",
+    image: "/images/projects/whiskly.png",
+    tech: ["Node.js", "Express", "SQLite"],
   },
 ];
