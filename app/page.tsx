@@ -15,11 +15,11 @@ export default function Home() {
         {/* HERO */}
         <section className="text-center py-20 md:py-32 px-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white rounded-3xl mt-10">
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Hi, I'm Bibek Kumar Pradhan 👋
           </h1>
 
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
             MSc Computer Engineering Graduate passionate about building
             modern web applications using React, Next.js, Python, and SQL.
           </p>
