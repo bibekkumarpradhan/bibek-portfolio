@@ -1,12 +1,11 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+
 import ProjectCard from "@/components/ui/ProjectCard";
 import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
     <>
-      <Header />
+
 
       <main className="max-w-6xl mx-auto p-8">
 
@@ -30,7 +29,7 @@ export default function Projects() {
 
       </main>
 
-      <Footer />
+
     </>
   );
 }

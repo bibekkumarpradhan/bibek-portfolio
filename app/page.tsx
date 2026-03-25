@@ -1,15 +1,11 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 import ProjectCard from "@/components/ui/ProjectCard";
-import DarkModeToggle from "@/components/ui/DarkModeToggle";
 import { projects } from "@/data/projects";
 import GithubGraph from "@/components/ui/GithubGraph";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Header />
-
       <main className="max-w-6xl mx-auto px-6 space-y-20">
 
         {/* HERO */}
@@ -25,19 +21,19 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8 flex-wrap">
-            <a
+            <Link
               href="/projects"
               className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
             >
               View Projects
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/contact"
               className="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition"
             >
               Contact Me
-            </a>
+            </Link>
 
             <a
               href="/resume.pdf"
@@ -49,42 +45,8 @@ export default function Home() {
 
         </section>
 
-        {/* SKILLS */}
-        <section className="py-20">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
-            Skills & Technologies
-          </h2>
-
-          <div className="flex flex-wrap justify-center gap-4 text-sm">
-
-            {[
-              "Python",
-              "SQL",
-              "JavaScript",
-              "React",
-              "Next.js",
-              "Tailwind CSS",
-              "Git",
-              "GitHub",
-              "Node.js",
-              "Database Design",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="bg-gray-200 dark:bg-gray-700 px-4 py-2 rounded-full hover:scale-105 transition"
-              >
-                {skill}
-              </span>
-            ))}
-
-          </div>
-
-        </section>
-
         {/* PROJECTS */}
         <section className="py-20">
-
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
             Featured Projects
           </h2>
@@ -102,48 +64,26 @@ export default function Home() {
               />
             ))}
           </div>
-
         </section>
-        {/* GITHUB ACTIVITY */}
-        <section className="py-20 text-center">
 
+        {/* GITHUB */}
+        <section className="py-20 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-10">
             GitHub Activity
           </h2>
 
           <GithubGraph />
-          <section className="py-20 text-center">
-            <h2 className="text-3xl font-bold mb-8">GitHub Stats</h2>
 
+          <div className="mt-10">
             <img
               src="https://github-readme-stats.vercel.app/api?username=bibekkumarpradhan&show_icons=true&theme=default"
               alt="GitHub Stats"
               className="mx-auto"
             />
-          </section>
-
-        </section>
-
-        {/* EDUCATION */}
-        <section className="py-20 text-center">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Education
-          </h2>
-
-          <p className="text-lg">
-            MSc Computer Engineering — Solent University
-          </p>
-
-          <p className="text-gray-600 dark:text-gray-400">
-            BCA — Tribhuvan University, Nepal
-          </p>
-
+          </div>
         </section>
 
       </main>
-
-      <Footer />
     </>
   );
 }
